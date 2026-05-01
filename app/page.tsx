@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import gifBackground from "@/public/pwm1.gif";
 import pic from "@/public/pic11.jpg";
 import Footer from "@/components/small-components/footer";
@@ -14,10 +15,24 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center z-0 opacity-65" 
           style={{ backgroundImage: `url(${gifBackground.src})` }}
         />
-        <div className="relative z-10 text-center">
-          <h1 className="name-gradient text-6xl md:text-7xl font-semibold">
+        <div className="relative z-10 text-center px-4">
+          <h1 className="name-gradient text-3xl sm:text-5xl md:text-7xl font-semibold text-center">
             Naveen Teja Beerakuppam
           </h1>
+          <p className="text-lightBlue text-xs sm:text-sm md:text-lg mt-3 font-medium tracking-widest uppercase">
+            Backend Engineer
+          </p>
+          <p className="text-slate-300 text-xs sm:text-sm md:text-base mt-3">
+            Production systems &nbsp;·&nbsp; APIs &amp; integrations
+          </p>
+          <div className="flex gap-4 justify-center mt-6">
+            <Link href="/Experience" className="px-5 py-2 bg-lightBlue text-black font-semibold rounded-full text-sm hover:bg-white transition-colors duration-300">
+              View My Work
+            </Link>
+            <Link href="/Contact" className="px-5 py-2 border border-lightBlue text-lightBlue font-semibold rounded-full text-sm hover:bg-lightBlue hover:text-black transition-colors duration-300">
+              Let&apos;s Talk
+            </Link>
+          </div>
         </div>
       </div>
 

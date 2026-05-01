@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning={true}>
       
       <body className={cn(
-          "h-screen w-full font-sans antialiased bg-black",
+          "min-h-screen w-full font-sans antialiased bg-black",
           poppins.variable
           )} suppressHydrationWarning={true}
       >

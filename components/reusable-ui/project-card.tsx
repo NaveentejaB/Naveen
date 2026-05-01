@@ -9,12 +9,12 @@ import { ProjectCardProps } from "@/lib/interface"
 export default function ProjectCard({data,index}:ProjectCardProps){
     return(
         <div className={`w-90/100 flex-wrap flex justify-between items-center gap-6  ${index%2 != 0 ? 'flex-row-reverse' : 'flex-row'}`}>
-            <div className="w-full md:w-1/2 flex flex-col gap-2">
-                    <div className="flex flex-col gap-2">
+            <div className="w-full md:w-1/2 flex flex-col gap-3">
+                    <div className="flex flex-col gap-3">
                         <DecorTrapLine/>
-                        <div className="flex flex-col">
+                        <div className="flex flex-col gap-0.5">
                             <h3 className="text-xl md:text-2xl font-bold text-white">{data.heading}</h3>
-                            <h3 className="text-lg md:text-xl font-semibold text-white">{data.subHead}</h3>
+                            <h3 className="text-base md:text-lg font-semibold text-lightBlue">{data.subHead}</h3>
                             <h5 className="text-sm md:text-base text-slate-300 my-1">{data.period}</h5>
                         </div>
                     </div>
@@ -26,8 +26,8 @@ export default function ProjectCard({data,index}:ProjectCardProps){
                         
                     </div>
             </div>
-            <div className="w-full md:w-45/100 h-full">
-                <Image className=" object-cover transform transition-transform duration-500 ease-in-out hover:scale-110 hover:-translate-x-4" width={560} height={400} src={data.imgLink} alt="img"/>
+            <div className="w-full md:w-45/100 h-full overflow-hidden rounded-lg">
+                <Image className="w-full h-auto object-cover transform transition-transform duration-500 ease-in-out hover:scale-110 hover:-translate-x-4" width={560} height={400} src={data.imgLink} alt={`${data.heading} — ${data.subHead}`}/>
             </div>
         </div>
     )

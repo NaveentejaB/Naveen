@@ -15,7 +15,7 @@ interface experienceDataType{
     companyName : string,
     period : string,
     imgLink : string,
-    info : string,
+    info : string[],
     skills : string[]
 }
 

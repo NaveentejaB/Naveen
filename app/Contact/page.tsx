@@ -65,12 +65,12 @@ const Page = () => {
 
     }
     return(
-        <div className="w-screen h-screen">
-            <div className="w-full h-1/4 md:h-1/3 flex justify-center items-center ">
-                <h2 className="gradient-text text-4xl md:text-6xl font-semibold ">CONTACT</h2>
+        <div className="w-full min-h-screen">
+            <div className="w-full py-16 md:py-24 flex justify-center items-center">
+                <h2 className="gradient-text text-4xl md:text-6xl font-semibold">CONTACT</h2>
             </div>
-            <div className="w-full flex justify-center">
-                <div className="w-[700px] md:w-[800px] h-[500px]  md:p-6 flex flex-col gap-6 justify-start items-center ">
+            <div className="w-full flex justify-center px-4">
+                <div className="w-full max-w-[800px] md:p-6 flex flex-col gap-6 justify-start items-center pb-8">
                     <div className="w-4/5 flex justify-start -mb-2">
                         <DecorTrapLineBig/>
                     </div>
