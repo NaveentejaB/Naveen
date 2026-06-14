@@ -49,13 +49,14 @@ export const experienceData = [
         period : "June 2025 - Present",
         imgLink : '/oms.jpg',
         info : [
-            "Drove Rs. 130 Cr across 78K+ fee transactions in 3 months by owning the order-placement layer, wired to payments via webhook retries.",
+            "Built Convo, an in-house communication tool in Go used by 15K+ employees — a concurrent notification service that centralizes alerts from internal systems into an in-app bot, with automatic account setup from the ERP and on-demand report commands.",
+            "Owned the store-payments flow driving Rs. 130 Cr across 78K+ transactions in 3 months; integrated the gateway via webhooks with retry logic and shipped order & reconciliation dashboards.",
+            "Re-architected the end-to-end OMS (Django/DRF) — order placement, routing, and courier integration for Ekart B2C, Apptymz, and FCU — into a no-data-loss flow with weight-based routing.",
             "Hardened the OMS to sustain 4K+ orders/hour across 120 branches during PTM by decoupling order, stock-release, and dispatch into idempotent flows — failure rate under 2%.",
-            "Shipped the OMS courier integration (Django/DRF) for Ekart B2C, Apptymz, and FCU with weight-based routing and a no-data-loss order flow.",
-            "Wired SAP into the Ekart flow and reconciled prior-FY ERP↔SAP drift, recovering Rs. 40 Cr in inventory visibility.",
-            "Integrated Avanse EMI for academic and transport fee installments with atomic ERP ledger writes; built a Go-based Mattermost integration for the internal ERP used by 15K+ employees.",
+            "Wired SAP into the Ekart flow for real-time stock adjustments and reconciled prior-FY ERP↔SAP drift, recovering Rs. 40 Cr in inventory visibility.",
+            "Integrated Avanse EMI so students can convert academic and transport fees into installments, with webhook-driven status updates and atomic ERP ledger writes.",
         ],
-        skills : ["Django", "DRF", "Go", "PostgreSQL", "Redis", "SAP Integration", "Webhooks", "Celery", "Docker"]
+        skills : ["Go", "Django", "DRF", "PostgreSQL", "Redis", "RabbitMQ", "SAP Integration", "Webhooks", "Celery", "Docker"]
     },
     {
         internRole : "Software Developer Intern",
@@ -79,6 +80,18 @@ export const experienceData = [
             "Led 2 engineers building RESTful endpoints for real-time inventory and order processing; cut API response times via query optimization and indexing.",
         ],
         skills : [ "Express.Js","Node.Js","RESTful APIs","JWT","MongoDB"]
+    },
+    {
+        internRole : "AI Tech Intern",
+        companyName : "SS Wealthserv Technologies",
+        period : "October 2023 - December 2023",
+        imgLink : '/vtryon.jpg',
+        info : [
+            "Built RESTful APIs in Express.js for apparel inventory management with CRUD operations and advanced custom-filter search.",
+            "Optimized MongoDB schemas with Mongoose for ~30% faster data retrieval, and tuned the React.js frontend–backend integration for a ~10% performance gain.",
+            "Contributed to a high-resolution virtual try-on model, working on cloth segmentation and human parsing based on VITON-HD research.",
+        ],
+        skills : [ "Express.Js","Node.Js","RESTful APIs","MongoDB","Machine Learning"]
     },
 ]
 
@@ -112,7 +125,7 @@ export const aboutMe = 'Backend-focused engineer building production financial s
 export const homePageData =[
      "I'm a dual-degree (B.Tech + M.Tech) graduate from IIT Kanpur. My thesis was in aerospace, but watching a production bug cascade into a system-wide incident pulled me toward something else — building systems that actually ship.",
      "About a year of full-time engineering on production financial systems — payments, EMI flows, ERP reconciliation, and atomic ledger writes — across Django/DRF, Express.js, and Go. Comfortable in Next.js and React.js to own features end-to-end.",
-     "At K12 Techno Services I shipped the OMS courier integration and the order-placement layer behind it — hardening the flow to sustain 4K+ orders/hour across 120 branches during PTM, and recovering Rs. 40 Cr in inventory visibility by reconciling prior-FY ERP↔SAP drift. Engineering systems to fail gracefully — whether aerodynamic or financial — turned out to be the same instinct."
+     "At K12 Techno Services I re-architected the OMS to sustain 4K+ orders/hour across 120 branches, owned a store-payments flow moving Rs. 130 Cr, and recovered Rs. 40 Cr in inventory visibility by reconciling ERP↔SAP drift. I also built Convo, a Go communication tool serving 15K+ employees. Engineering systems to fail gracefully — whether aerodynamic or financial — turned out to be the same instinct."
 ]
 
 

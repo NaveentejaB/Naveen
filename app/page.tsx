@@ -23,7 +23,7 @@ export default function Home() {
             Backend Engineer
           </p>
           <p className="text-slate-300 text-xs sm:text-sm md:text-base mt-3">
-            Production systems &nbsp;·&nbsp; APIs &amp; integrations
+            Scalable Backends &nbsp;·&nbsp; Payments &amp; Fintech &nbsp;·&nbsp; Distributed Systems
           </p>
           <div className="flex gap-4 justify-center mt-6">
             <Link href="/Experience" className="px-5 py-2 bg-lightBlue text-black font-semibold rounded-full text-sm hover:bg-white transition-colors duration-300">
