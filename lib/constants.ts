@@ -49,12 +49,12 @@ export const experienceData = [
         period : "June 2025 - Present",
         imgLink : '/oms.jpg',
         info : [
-            "Built Convo, an in-house communication tool in Go used by 15K+ employees — a concurrent notification service that centralizes alerts from internal systems into an in-app bot, with automatic account setup from the ERP and on-demand report commands.",
-            "Owned the store-payments flow driving Rs. 130 Cr across 78K+ transactions in 3 months; integrated the gateway via webhooks with retry logic and shipped order & reconciliation dashboards.",
-            "Re-architected the end-to-end OMS (Django/DRF) — order placement, routing, and courier integration for Ekart B2C, Apptymz, and FCU — into a no-data-loss flow with weight-based routing.",
-            "Hardened the OMS to sustain 4K+ orders/hour across 120 branches during PTM by decoupling order, stock-release, and dispatch into idempotent flows — failure rate under 2%.",
-            "Wired SAP into the Ekart flow for real-time stock adjustments and reconciled prior-FY ERP↔SAP drift, recovering Rs. 40 Cr in inventory visibility.",
-            "Integrated Avanse EMI so students can convert academic and transport fees into installments, with webhook-driven status updates and atomic ERP ledger writes.",
+            "Owned the store-payments flow processing 90K+ transactions worth Rs. 130 Cr in 3 months; integrated the payment gateway via webhooks with retry logic and shipped reconciliation dashboards for finance and operations visibility.",
+            "Integrated Avanse EMI as a third-party financing partner to let students convert academic and transport fees into monthly installments, with webhook-driven status updates and atomic ERP ledger writes.",
+            "Revamped the Order Management System (Django/DRF), re-architecting order placement, weight-based courier routing, and SAP stock-sync across logistics partners into a no-data-loss flow guaranteeing delivery for every order.",
+            "Hardened the system to sustain 4K+ orders/hour across 120 branches during peak enrollment by decoupling order, stock-release, and dispatch into idempotent flows, cutting failure rate to under 2%.",
+            "Engineered live GPS tracking over the GT06 protocol for 1200+ school buses, decoding device telemetry into real-time location updates and customized parent reminders for bus arrival, boarding, and drop-off events.",
+            "Designed and built Convo, an in-house communication tool in Go used by 15K+ employees — a concurrent notification service that centralizes alerts from internal systems into an in-app bot, auto-provisions new users from the ERP, and serves on-demand reports via commands.",
         ],
         skills : ["Go", "Django", "DRF", "PostgreSQL", "Redis", "RabbitMQ", "SAP Integration", "Webhooks", "Celery", "Docker"]
     },
